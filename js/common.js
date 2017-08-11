@@ -192,7 +192,7 @@
 			document.body.appendChild(myOverlay);
 
 			//resize and position overlay
-			myOverlay.style.width = window.innerWidth - 17 + 'px';
+			myOverlay.style.width = window.innerWidth + 'px';
 			myOverlay.style.height = window.innerHeight + 'px';
 			myOverlay.style.top = window.pageYOffset + 'px';
 			myOverlay.style.left = window.pageXOffset + 'px';
@@ -275,7 +275,7 @@ function openCity(evt, eventName) {
 	for (i = 0; i < tablinks.length; i++) {
 		tablinks[i].className = tablinks[i].className.replace(" active-tab", "");
 	}
-	document.getElementById(eventName).style.display = "flex";
+	document.getElementById(eventName).style.display = "block";
 	evt.currentTarget.className += " active-tab";
 }
 
